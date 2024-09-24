@@ -10,22 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Mendapatkan elemen link sidebar
                 const waktuSholatLink = document.getElementById('waktu-sholat-link');
-                const sibLink = document.getElementById('sib-link');
-                const vmtLink = document.getElementById('vmt-link');
-                const wsPolinusLink = document.getElementById('ws-polinus-link');
-                const dosenLink = document.getElementById('dosen-link');
+                const bully = document.getElementById('bully-link');
 
                 // Cek apakah URL saat ini mengandung 'index.html' untuk menambahkan class 'active'
                 if (currentURL.includes('waktu-sholat.html')) {
                     waktuSholatLink.classList.add('active');
-                } else if (currentURL.includes('sib.html')) {
-                    sibLink.classList.add('active');
-                } else if (currentURL.includes('vmt.html')) {
-                    vmtLink.classList.add('active');
-                } else if (currentURL.includes('ws.html')) {
-                    wsPolinusLink.classList.add('active');
-                } else if (currentURL.includes('dosen.html')) {
-                    dosenLink.classList.add('active');
+                } else if (currentURL.includes('bully.html')) {
+                    bully.classList.add('active');
                 } else {
                     waktuSholatLink.classList.add('active');
                 }
