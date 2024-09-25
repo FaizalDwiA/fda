@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Mendapatkan elemen link sidebar
                 const waktuSholatLink = document.getElementById('waktu-sholat-link');
+                const anime = document.getElementById('anime-link');
                 const bully = document.getElementById('bully-link');
                 const warcraft3 = document.getElementById('warcraft3-link');
                 const warriors = document.getElementById('warriors-link');
@@ -20,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     waktuSholatLink.classList.add('active');
                 } else if (currentURL.includes('bully.html')) {
                     bully.classList.add('active');
+                } else if (currentURL.includes('anime.html')) {
+                    anime.classList.add('active');
                 } else if (currentURL.includes('warcraft3.html')) {
                     warcraft3.classList.add('active');
                 } else if (currentURL.includes('warriors.html')) {
