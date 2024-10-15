@@ -9,12 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 const currentURL = window.location.href;
 
                 // Mendapatkan elemen link sidebar
+
+                // Sub Menu
                 const waktuSholatLink = document.getElementById('waktu-sholat-link');
                 const anime = document.getElementById('anime-link');
                 const bully = document.getElementById('bully-link');
                 const warcraft3 = document.getElementById('warcraft3-link');
                 const warriors = document.getElementById('warriors-link');
-
+                const htmlElement = document.getElementById('html-element-link');
 
                 // Cek apakah URL saat ini mengandung 'index.html' untuk menambahkan class 'active'
                 if (currentURL.includes('waktu-sholat.html')) {
@@ -27,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     warcraft3.classList.add('active');
                 } else if (currentURL.includes('warriors.html')) {
                     warriors.classList.add('active');
+                } else if (currentURL.includes('html-element.html')) {
+                    htmlElement.classList.add('active');
                 } else {
                     waktuSholatLink.classList.add('active');
                 }
@@ -40,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const Items = document.querySelectorAll('#navbarItem li');
 
             searchSidebar.addEventListener('input', function () {
-                console.log('ok');
                 const query = searchSidebar.value.toLowerCase();
 
                 Items.forEach(item => {
